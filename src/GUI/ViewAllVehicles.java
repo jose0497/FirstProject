@@ -86,6 +86,8 @@ public class ViewAllVehicles extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        vehiclesTable.setBackground(new java.awt.Color(102, 255, 255));
+        vehiclesTable.setForeground(new java.awt.Color(204, 0, 0));
         vehiclesTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -96,6 +98,9 @@ public class ViewAllVehicles extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(vehiclesTable);
 
+        closeButton.setBackground(new java.awt.Color(255, 51, 51));
+        closeButton.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        closeButton.setForeground(new java.awt.Color(0, 204, 204));
         closeButton.setText("Cerrar");
         closeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,7 +113,7 @@ public class ViewAllVehicles extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(478, Short.MAX_VALUE)
+                .addContainerGap(474, Short.MAX_VALUE)
                 .addComponent(closeButton)
                 .addGap(23, 23, 23))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -121,7 +126,7 @@ public class ViewAllVehicles extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
                 .addComponent(closeButton)
                 .addContainerGap())
         );
